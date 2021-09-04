@@ -85,7 +85,7 @@ function App() {
             {
               todoList.map((ele,index)=>{
                 return(
-                  <List key={index} index = {index} onDelete={()=>onDelete(index)} onModified={(updatedTask)=>{onModified(updatedTask,index)}}>{ele}</List>
+                  <List key={ele+index} index = {index} onDelete={()=>onDelete(index)} onModified={(updatedTask)=>{onModified(updatedTask,index)}}>{ele}</List>
                 )
               })
             }           
